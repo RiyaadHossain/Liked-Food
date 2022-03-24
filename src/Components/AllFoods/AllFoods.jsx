@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Food from "../Food/Food";
+import Summary from "../Summary/Summary";
 import "./AllFoods.css";
 
 const AllFoods = () => {
@@ -9,13 +10,20 @@ const AllFoods = () => {
       .then((res) => res.json())
       .then((json) => setFoods(json.meals));
   }, []);
+    const [like, setLiked] = useState([])
+    const liked = () => {
+        setLiked(like + 1)
+    }
 
   console.log(foods);
   return (
-    <div className="food-container">
-      {
-       foods.map(food => <Food key={food.idMeal} food={food}></Food>)
-      }
+    <div className="main-container">
+      <div className="food-container">
+        {foods.map((food) => (
+          <Food key={food.idMeal} liked={liked} food={food}></Food>
+        ))}
+      </div>
+        <div className="summary"><Summary like={like}></Summary></div>
     </div>
   );
 };
