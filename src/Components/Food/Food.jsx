@@ -39,7 +39,7 @@ const Food = ({ food, liked }) => {
             <a className="tutorial" href={strYoutube}>
               Watch Tutorial
             </a>
-            <button onClick={liked} className="btn">
+            <button onClick={() => {liked(food)}} className="btn">
               <FontAwesomeIcon icon={faHeart} />
             </button>
           </div>

@@ -10,7 +10,10 @@ const Summary = ({ like }) => {
       </div>
       <div className="summary-body">
         <p className="lead">
-          <strong>Total Like:</strong> {like.length}👍🏻
+          <strong>Total Likes:</strong> {like.length}👍🏻
+        </p>
+        <p className="lead">
+          <strong>You Liked:</strong> {like.map(lik => <li>{lik.strMeal}</li>)} 
         </p>
       </div>
     </div>

@@ -11,8 +11,9 @@ const AllFoods = () => {
       .then((json) => setFoods(json.meals));
   }, []);
     const [like, setLiked] = useState([])
-    const liked = () => {
-        setLiked(like + 1)
+    const liked = (food) => {
+      const newFoods = [...like, food]
+      setLiked(newFoods)
     }
 
   return (
