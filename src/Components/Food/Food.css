@@ -1,0 +1,39 @@
+.card{
+    width: 300px;
+    height: 508px;
+    border-radius: 8px;
+    border: 1px solid #95a0a7; 
+}
+.card-img > img {
+    height: 286px;
+    width: 286px;
+    border-radius: 8px;
+    margin: 7px;
+  }
+  .card-body{
+      padding: 15px;
+      padding-top: 0;
+  }
+  .card-body > p{
+      font-size: 18px;
+      font-weight: 400;
+  }
+  .flex{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+  .tutorial{
+      text-decoration: none;
+      border: 1px solid #5463FF;
+      background-color: #5463FF;
+      padding: 5px;
+      border-radius: 30px;
+      color: aliceblue;
+      font-size: 15px;
+  }
+  .tag{
+      color:#D82148 ;
+      text-decoration: underline;
+      font-weight: bold;
+  }
