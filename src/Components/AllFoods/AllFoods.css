@@ -1,14 +1,22 @@
 .main-container{
     display: grid;
     grid-template-columns:4fr 1fr;
+    margin-top: 60px;
 }
 .food-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
     margin: 0 auto;
-    margin-top: 60px;
 }
 .summary{
     background-color: #273c75;
+}
+@media screen and (max-width:1250px) {
+    .main-container{
+        grid-template-columns:3fr 1fr;
+    }
+    .food-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

@@ -15,7 +15,6 @@ const AllFoods = () => {
         setLiked(like + 1)
     }
 
-  console.log(foods);
   return (
     <div className="main-container">
       <div className="food-container">
