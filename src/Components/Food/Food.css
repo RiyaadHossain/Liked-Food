@@ -35,7 +35,13 @@
       border-radius: 30px;
       color: aliceblue;
       font-size: 15px;
-      font-weight: 500;
+      font-weight: 600;
+  }
+  .tutorial:hover{
+      transition: ease-in-out .5s;
+    border: 2px solid #5463FF;
+    background-color: aliceblue;
+    color: #5463FF;
   }
   .tag{
       color:#292C6D ;
@@ -49,3 +55,9 @@
       border-radius: 50%;
       color: #192a56;
   }
+  .btn:hover{
+    background-color:#192a56 ;
+    color: #17c0eb;
+    transition: linear .5s;
+  }
+  
